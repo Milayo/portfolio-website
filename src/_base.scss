@@ -1,0 +1,39 @@
+
+// COLOR VARIABLES
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px;
+$bp-small: 37.5em; // 600px;
+
+// TYPOGRAPHY
+$font-primary: "Source Code Pro", monospace;
+
+%heading {
+  font-family: $font-primary;
+}
+
+.heading-1 {
+  @extend %heading;
+  font-size: 4.5rem;
+}
+
+.heading-2 {
+  @extend %heading;
+  font-size: 4rem;
+}
+
+// MARGIN
+.mb-sm {
+  margin-bottom: 2rem;
+}
+.mb-md {
+  margin-bottom: 3rem;
+}
+.mb-lg {
+  margin-bottom: 4rem;
+}
+.mb-hg {
+  margin-bottom: 8rem;
+}

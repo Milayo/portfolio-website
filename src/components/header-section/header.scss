@@ -1,0 +1,61 @@
+@import "../../base";
+
+.header {
+  height: 15vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0;
+
+  &__title {
+    font-family: $font-primary;
+    font-size: 2.5rem;
+  }
+
+  &__menu {
+    display: flex;
+
+    &-tab {
+      margin-right: 2.5rem;
+      cursor: pointer;
+      transform: translateX(-0.5rem);
+      transition: transform 200ms;
+      position: relative;
+    }
+
+    &-tab::before {
+      content: "#";
+      display: inline-block;
+      width: 0.75em;
+      color: #888888;
+      opacity: 0;
+      transition: opacity 200ms;
+    }
+
+    &-tab:hover {
+      transform: none;
+    }
+    &-tab:hover::before {
+      opacity: 1;
+    }
+
+    &-tab::after {
+      content: "";
+      width: 100%;
+      height: 5px;
+      background-color: #ff5277;
+      border-radius: 4px;
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.25s ease;
+    }
+
+     &-tab:hover::after {
+      transform: scaleX(1);
+    }
+  }
+}

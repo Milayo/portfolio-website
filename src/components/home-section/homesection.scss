@@ -1,0 +1,115 @@
+@import "../../base";
+
+.homesection {
+  font-family: $font-primary;
+  font-size: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  line-height: 7.5rem;
+  letter-spacing: 0.8rem;
+  height: 70vh;
+  justify-content: center;
+  width: 60vw;
+  margin: auto;
+
+
+  span {
+    display: inline-block;
+  }
+
+  &-text0 {
+    color: #ff5277;
+    display: inline-block;
+    
+  }
+
+  &-text1 {
+    position: relative;
+    color: grey;
+    -webkit-text-stroke: 0.1vw #0e141b;
+  }
+  &-text1::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #ff5277;
+    -webkit-text-stroke: 0vw;
+    border-right: 3px solid #ff5277;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+    -webkit-animation: animate 6s linear infinite;
+
+  }
+  &-text2 {
+    position: relative;
+    color: grey;
+    -webkit-text-stroke: 0.1vw #0e141b;
+  }
+  &-text2::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #ff5277;
+    -webkit-text-stroke: 0vw #0e141b;
+    border-right: 3px solid #ff5277;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+    -webkit-animation: animate 6s linear infinite;
+    
+  }
+  &-text3 {
+    position: relative;
+    color: grey;
+    -webkit-text-stroke: 0.1vw #0e141b;
+  }
+  &-text3::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #ff5277;
+    -webkit-text-stroke: 0vw #0e141b;
+    border-right: 3px solid #ff5277;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+    -webkit-animation: animate 6s linear infinite;
+  }
+  @keyframes animate {
+    0%,
+    10%,
+    100% {
+      width: 0;
+    }
+    70%,
+    90% {
+      width: 100%;
+    }
+  }
+}
+
+
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes blinkCursor {
+    from {
+      border-right-color: black;
+    }
+    to {
+      border-right-color: transparent;
+    }
+  }
