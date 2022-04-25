@@ -2,11 +2,15 @@
 
 .header {
   height: 15vh;
+  z-index: 2000;
   display: flex;
-  justify-content: space-around;
+  width: 80vw;
+  margin: auto;
+  justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0;
+  
 
   &__title {
     font-family: $font-primary;
@@ -15,9 +19,9 @@
 
   &__menu {
     display: flex;
+    gap: 2vw;
 
     &-tab {
-      margin-right: 2.5rem;
       cursor: pointer;
       transform: translateX(-0.5rem);
       transition: transform 200ms;
@@ -54,7 +58,7 @@
       transition: transform 0.25s ease;
     }
 
-     &-tab:hover::after {
+    &-tab:hover::after {
       transform: scaleX(1);
     }
   }

@@ -1,9 +1,16 @@
 import "./App.css";
-import LandingSection from "./components/landing-section/landingpage-section";
+import FullPage from "./components/fullpage/fullpage";
+import Header from "./components/header-section/header";
+
+
 const App = () => {
-  return <div>
-    <LandingSection/>
-  </div>;
+  return (
+    <div>
+      <Header />
+      <FullPage />
+      
+    </div>
+  );
 };
 
 export default App;

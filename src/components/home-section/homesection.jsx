@@ -8,7 +8,7 @@ const HomeSection = () => {
         <h1>
           <span className="homesection-text0">let</span> {"person = { "}
         </h1>
-       
+
         <h2>
           firstName:{" "}
           <span data-text="'Tomilayo'," className="homesection-text1">
@@ -30,6 +30,7 @@ const HomeSection = () => {
         </h2>
         <h2>{"};"}</h2>
       </div>
+     
     </div>
   );
 };

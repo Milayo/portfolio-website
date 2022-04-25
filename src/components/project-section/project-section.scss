@@ -1,0 +1,35 @@
+@import "../../base";
+
+.projectsection {
+  background-color: #0e141b;
+  display: flex;
+  flex-direction: column;
+  font-family: $font-tertiary;
+  font-size: 2rem;
+  line-height: 3rem;
+  gap: 3rem;
+  // justify-content: center;
+  // align-items: center;
+
+  &-title {
+    width: 75vw;
+    font-size: 2.2rem;
+    margin: 0 auto;
+    color: #FF5277;
+  }
+  &-item {
+    border: 1px solid #FF5277;
+    padding: 3.5vh;
+    width: 70vw;
+    margin: 0 auto;
+    height: 25vh;
+  }
+
+  &-footer {
+    display: flex;
+    gap: 5rem;
+    color: #FF5277;
+    font-weight: 300;
+    opacity: 0.7;
+  }
+}

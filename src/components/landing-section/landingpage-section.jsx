@@ -7,14 +7,15 @@ import HomeSection from "../home-section/homesection";
 const LandingSection = () => {
   return (
     <section>
-      <Header />
       <HomeSection />
-      <div className="wave wave1"></div>
+      {/* <div className="wave wave1"></div>
       <div className="wave wave2"></div>
       <div className="wave wave3"></div>
-      <div className="wave wave4"></div>
+      <div className="wave wave4"></div> */}
 
-      <div class="bouncingball"></div>
+      <div class="bouncingball">
+        <h1>Scroll Down &#8595;</h1>
+      </div>
     </section>
   );
 };
