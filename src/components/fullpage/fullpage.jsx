@@ -5,6 +5,7 @@ import ProjectSection from "../project-section/project-section";
 import QuoteSection from "../quotes/quote-section";
 import AboutSection from "../about-section/aboutsection";
 import ContactSection from "../contact-section/contact-section";
+import Footer from "../footer/footer-section";
 
 const FullPage = () => {
   return (
@@ -15,6 +16,7 @@ const FullPage = () => {
       <QuoteSection />
       <AboutSection />
       <ContactSection />
+      <Footer/>
     </div>
   );
 };

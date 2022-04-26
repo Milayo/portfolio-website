@@ -1,11 +1,10 @@
 @import "../../base";
 
 .quotes-container {
-    background-color: #0e141b;
-    height: 100vh;
-    text-transform: uppercase;
-font-family: $font-secondary;
-    font-size: 1.5rem;
-    // letter-spacing: 1rem;
-
+  background-color: #0e141b;
+  height: 100vh;
+  text-transform: uppercase;
+  font-family: $font-secondary;
+  font-size: 1.5rem;
+  position: relative;
 }

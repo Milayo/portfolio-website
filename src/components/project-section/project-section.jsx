@@ -3,7 +3,7 @@ import "./project-section.scss";
 
 const ProjectSection = () => {
   return (
-    <div className="projectsection">
+    <div className="projectsection" id="work">
       <p className="projectsection-title">{"<work>"}</p>
       <div className="projectsection-item">
         <p>My Project Title</p>

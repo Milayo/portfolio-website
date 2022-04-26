@@ -31,7 +31,7 @@ const ContactSection = () => {
     e.target.reset();
   };
   return (
-    <div className="contactsection">
+    <div className="contactsection" id="contact">
       <p className="contactsection-title">{"<contact>"}</p>
       <div className="contactsection-content">
         <p className="contactsection-main">
