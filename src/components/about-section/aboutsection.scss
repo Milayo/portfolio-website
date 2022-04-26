@@ -1,0 +1,35 @@
+@import "../../base";
+
+.aboutsection {
+  height: 100vh;
+  margin-top: 10rem;
+  font-family: $font-tertiary;
+  font-size: 2rem;
+  line-height: 3rem;
+
+  &-title {
+    width: 75vw;
+    font-size: 2.2rem;
+    margin: 5rem auto;
+    color: #ff5277;
+  }
+  &-item {
+    width: 70vw;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+}
+
+.skillset {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 5rem;
+  width: 70vw;
+  margin: auto;
+
+  i {
+    font-size: 10rem;
+    color: #ff5277;
+  }
+}

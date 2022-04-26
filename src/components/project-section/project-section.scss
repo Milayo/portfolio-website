@@ -1,7 +1,6 @@
 @import "../../base";
 
 .projectsection {
-  background-color: #0e141b;
   display: flex;
   flex-direction: column;
   font-family: $font-tertiary;
@@ -15,20 +14,67 @@
     width: 75vw;
     font-size: 2.2rem;
     margin: 0 auto;
-    color: #FF5277;
+    color: #ff5277;
   }
   &-item {
-    border: 1px solid #FF5277;
+    border: 1px solid #ff5277;
     padding: 3.5vh;
     width: 70vw;
     margin: 0 auto;
     height: 25vh;
+    position: relative;
+
+    p {
+      opacity: 0;
+      animation: fade-in-text 0.01s ease-in 3s forwards;
+    }
+
+    @keyframes fade-in-text {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  }
+
+  &-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0%;
+    right: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #ff5277;
+    animation: swipe-in 2s ease-in 1s forwards;
+
+    z-index: 1;
+  }
+
+  @keyframes swipe-in {
+    0% {
+      width: 0%;
+      right: 100%;
+    }
+
+    50% {
+      width: 100%;
+      right: 0%;
+    }
+
+    100% {
+      width: 0%;
+      right: 100%;
+    }
   }
 
   &-footer {
     display: flex;
     gap: 5rem;
-    color: #FF5277;
+    color: #ff5277;
     font-weight: 300;
     opacity: 0.7;
   }
