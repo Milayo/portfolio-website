@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.6.2",
     "@react-three/fiber": "^8.0.12",
     "@splinetool/react-spline": "^2.0.0",
     "@splinetool/runtime": "^0.9.35",
