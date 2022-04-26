@@ -1,0 +1,92 @@
+@import "../../base";
+
+.contactsection {
+  height: 100vh;
+  font-family: $font-tertiary;
+  font-size: 2rem;
+
+  &-title {
+    width: 75vw;
+    font-size: 2.2rem;
+    margin: 5rem auto;
+    color: #ff5277;
+  }
+  &-content {
+    width: 70vw;
+    padding: 2rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: space-between;
+  }
+
+  &-main {
+    font-size: 2.5rem;
+
+    a {
+      text-decoration: underline;
+      text-decoration-color: #ff5277;
+      text-decoration-thickness: 0.4rem;
+    }
+  }
+
+  &-form {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  &-submit {
+    display: inline-block;
+    letter-spacing: 0.2rem;
+    outline: 2px solid #ff5277;
+    width: 15vw;
+    border: none;
+    font-family: $font-tertiary;
+    font-size: 2rem;
+    height: 6vh;
+
+    background: none;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    transition: color 1s;
+    padding: 1rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -50px;
+      width: 150%;
+      height: 105%;
+      background-color: #ff5277;
+      transform: scaleX(0) skewX(35deg);
+      transform-origin: left;
+      transition: transform 1s;
+      z-index: -1;
+    }
+
+
+    &:hover::before {
+      transform: scaleX(1) skewX(35deg);
+    }
+  }
+
+  &-input {
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: #ff5277;
+    background: none;
+    width: 50vw;
+    padding-bottom: 1rem;
+    color: white;
+  }
+
+  ::placeholder {
+    color: grey;
+    font-size: 2rem;
+    font-family: $font-tertiary;
+  }
+}
