@@ -67,7 +67,5 @@
 //   };
 // }
 
-// import Spline from "@splinetool/react-spline";
 
-//  <Spline scene="https://draft.spline.design/CzllSfkbO4n4UV46/scene.spline" />;
 
