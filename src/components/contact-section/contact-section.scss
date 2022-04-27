@@ -7,7 +7,7 @@
 
   &-title {
     width: 75vw;
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     margin: 5rem auto;
     color: #ff5277;
   }
@@ -22,13 +22,16 @@
   }
 
   &-main {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
 
     a {
       text-decoration: underline;
       text-decoration-color: #ff5277;
       text-decoration-thickness: 0.4rem;
+     
     }
+
+  
   }
 
   &-form {
@@ -46,6 +49,7 @@
     font-family: $font-tertiary;
     font-size: 2rem;
     height: 6vh;
+    cursor: pointer;
 
     background: none;
     color: white;

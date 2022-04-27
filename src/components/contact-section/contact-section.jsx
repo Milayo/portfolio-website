@@ -36,7 +36,7 @@ const ContactSection = () => {
       <div className="contactsection-content">
         <p className="contactsection-main">
           You can get in touch by sending an email on{" "}
-          <a href="mailto:max.mustermann@example.com">
+          <a href="mailto: moladeijarotimi@gmail.com">
             moladeijarotimi@gmail.com
           </a>
           .

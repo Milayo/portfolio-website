@@ -8,11 +8,11 @@ import HomeSection from "../home-section/homesection";
 const LandingSection = () => {
   return (
     <section>
-      {/* <HomeSection /> */}
-      <Spline
+      <HomeSection />
+      {/* <Spline
         className="boy"
         scene="https://prod.spline.design/qpyQFxCmO9AVfvDX/scene.spline"
-      />
+      /> */}
       {/* <div className="wave wave1"></div>
       <div className="wave wave2"></div>
       <div className="wave wave3"></div>
