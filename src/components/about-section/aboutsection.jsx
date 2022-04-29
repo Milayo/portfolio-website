@@ -7,20 +7,19 @@ const AboutSection = () => {
       <div className="aboutsection_content1">
         <p className="aboutsection-title">{"<about>"}</p>
         <p className="aboutsection-item">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos totam
-          est, minima ea fugiat, explicabo repellendus vitae eius, quisquam ab
-          iure? Dolorem doloribus quae quasi ipsum alias fugit eligendi dolor.
+          Hello World! I'm a front-end web developer with years of experience. I
+          enjoy building interactive and responsive websites using modern
+          technologies.
         </p>
 
         <p className="aboutsection-item">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos totam
-          est, minima ea fugiat, explicabo repellendus vitae eius, quisquam ab
-          iure? Dolorem doloribus quae quasi ipsum alias fugit eligendi dolor.
+          When I'm not coding, I enjoy reading books or writing articles. I am open to learning
+          new technologies and frameworks and collaborating with more people in
+          the tech space.
         </p>
         <p className="aboutsection-item">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos totam
-          est, minima ea fugiat, explicabo repellendus vitae eius, quisquam ab
-          iure? Dolorem doloribus quae quasi ipsum alias fugit eligendi dolor.
+          Currently, I'm exploring more fields in the Web3 space, and I'm pretty
+          enthusiastic about blockchain technologies.
         </p>
         <p className="aboutsection-title">{"</about>"}</p>
       </div>

@@ -1,16 +1,18 @@
 section {
   position: relative;
-  width: 100%;
+  display: flex;
+  width: 80vw;
+  margin: 0 auto;
   height: 90vh;
   overflow: hidden;
   z-index: 1;
 
-  .boy {
-    z-index: -1;
-    top: 0;
-    left: 0;
-    position: absolute;
-  }
+  // .boy {
+  //   z-index: -1;
+  //   top: 0;
+  //   left: 0;
+  //   position: absolute;
+  // }
 
   // .wave {
   //   position: fixed;
@@ -116,4 +118,23 @@ section {
   //     -webkit-animation-timing-function: ease-in;
   //   }
   // }
+}
+
+.model {
+  width: 30vw;
+  position: relative;
+}
+
+.tooltiptext {
+  position: absolute;
+  z-index: 1;
+  width: 200px;
+  visibility: hidden;
+  background-color: white;
+  color: #000;
+  text-align: center;
+}
+
+.model:hover .tooltiptext {
+  visibility: visible;
 }

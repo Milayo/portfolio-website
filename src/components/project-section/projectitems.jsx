@@ -49,10 +49,20 @@ const ProjectItems = [
   {
     id: 6,
     title: "Daily Agenda Application",
-    description: "A daily agenda application. Built with REACT JS, ROUTER, FIREBASE, REDUX, FIREBASE and MDBREACT.",
+    description:
+      "A daily agenda application. Built with REACT JS, ROUTER, FIREBASE, REDUX, FIREBASE and MDBREACT.",
     websiteLink: "",
     videoDemo: "",
     githubLink: "https://github.com/Milayo/agenda-app",
+  },
+  {
+    id: 7,
+    title: "Portfolio",
+    description:
+      "A portfolio website. Built with REACT JS, SASS, EMAIL JS, REACT SCROLL, REACT-THREE-FIBER AND SWEET ALERT.",
+    websiteLink: "",
+    videoDemo: "",
+    githubLink: "https://github.com/Milayo/portfolio-website",
   },
 ];
 

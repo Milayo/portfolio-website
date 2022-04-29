@@ -7,6 +7,7 @@ const ContactSection = () => {
   const SERVICE_ID = "service_hafopfd";
   const TEMPLATE_ID = "template_ryb26uh";
   const PUBLIC_KEY = "hr8fD49jZkSeyFnc-";
+  const mailAddress = "mailto:moladeijarotimi@gmail.com";
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -36,7 +37,7 @@ const ContactSection = () => {
       <div className="contactsection-content">
         <p className="contactsection-main">
           You can get in touch by sending an email on{" "}
-          <a href="mailto: moladeijarotimi@gmail.com">
+          <a href="mailto:moladeijarotimi@gmail.com">
             moladeijarotimi@gmail.com
           </a>
           .

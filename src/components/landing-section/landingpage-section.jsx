@@ -1,14 +1,27 @@
 import React from "react";
 import "./landingpage-section.scss";
-import Spline from "@splinetool/react-spline";
-
+import { Suspense } from "react";
+import { Environment, OrbitControls } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+import Model from "../model.js";
 
 import HomeSection from "../home-section/homesection";
 
 const LandingSection = () => {
   return (
     <section>
-      <HomeSection />
+      <HomeSection />{" "}
+      <div className="model">
+        {" "}
+        <Canvas>
+          <Suspense fallback={null}>
+            <Model />
+            <OrbitControls />
+            <Environment preset="night" background={false} />
+          </Suspense>
+        </Canvas>
+        <div className="tooltiptext">Drag Me</div>
+      </div>
       {/* <Spline
         className="boy"
         scene="https://prod.spline.design/qpyQFxCmO9AVfvDX/scene.spline"
@@ -25,6 +38,3 @@ const LandingSection = () => {
 };
 
 export default LandingSection;
-
-
- 

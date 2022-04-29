@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
+    "@react-three/drei": "^9.5.5",
     "@react-three/fiber": "^8.0.12",
     "@splinetool/react-spline": "^2.0.0",
     "@splinetool/runtime": "^0.9.35",
@@ -19,6 +20,7 @@
     "react-spline": "^1.2.1",
     "sweetalert2": "^11.4.9",
     "three": "^0.139.2",
+    "three-stdlib": "^2.10.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

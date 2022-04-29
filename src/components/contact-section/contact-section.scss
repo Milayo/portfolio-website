@@ -28,10 +28,9 @@
       text-decoration: underline;
       text-decoration-color: #ff5277;
       text-decoration-thickness: 0.4rem;
-     
+      
     }
 
-  
   }
 
   &-form {
@@ -71,7 +70,6 @@
       transition: transform 1s;
       z-index: -1;
     }
-
 
     &:hover::before {
       transform: scaleX(1) skewX(35deg);
