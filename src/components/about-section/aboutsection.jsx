@@ -4,7 +4,12 @@ import "./aboutsection.scss";
 const AboutSection = () => {
   return (
     <div className="aboutsection" id="about">
-      <div className="aboutsection_content1">
+      <div
+        className="aboutsection_content1"
+        data-aos="zoom-out"
+        data-aos-duration="2000"
+        data-aos-offset="300"
+      >
         <p className="aboutsection-title">{"<about>"}</p>
         <p className="aboutsection-item">
           Hello World! I'm a front-end web developer with years of experience. I
@@ -13,9 +18,9 @@ const AboutSection = () => {
         </p>
 
         <p className="aboutsection-item">
-          When I'm not coding, I enjoy reading books or writing articles. I am open to learning
-          new technologies and frameworks and collaborating with more people in
-          the tech space.
+          When I'm not coding, I enjoy reading books or writing articles. I am
+          open to learning new technologies and frameworks and collaborating
+          with more people in the tech space.
         </p>
         <p className="aboutsection-item">
           Currently, I'm exploring more fields in the Web3 space, and I'm pretty
@@ -23,7 +28,11 @@ const AboutSection = () => {
         </p>
         <p className="aboutsection-title">{"</about>"}</p>
       </div>
-      <div className="aboutsection_content2">
+      <div
+        className="aboutsection_content2"
+        data-aos="fade-down"
+        data-aos-duration="2000"
+      >
         <p className="aboutsection-title">{"<skillset>"}</p>
         <div className="skillset">
           <i class="devicon-html5-plain"></i>

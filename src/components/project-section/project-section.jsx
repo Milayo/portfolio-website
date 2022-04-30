@@ -4,7 +4,10 @@ import ProjectItems from "./projectitems";
 
 const ProjectSection = () => {
   return (
-    <div className="projectsection" id="work">
+    <div
+      className="projectsection"
+      id="work"
+    >
       <p className="projectsection-title">{"<work>"}</p>
       {ProjectItems.map(
         ({ id, title, description, websiteLink, videoDemo, githubLink }) => (
@@ -19,7 +22,6 @@ const ProjectSection = () => {
           </div>
         )
       )}
-
       <p className="projectsection-title">{"</work>"}</p>
     </div>
   );

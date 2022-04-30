@@ -1,15 +1,18 @@
 @import "../../base";
 
 .contactsection {
-  height: 80vh;
   font-family: $font-tertiary;
   font-size: 2rem;
 
   &-title {
     width: 75vw;
-    font-size: 2.1rem;
-    margin: 5rem auto;
+    font-size: 2.2rem;
+    margin: 3rem auto;
     color: #ff5277;
+
+     @media only screen and (max-width: $bp-medium) {
+       width: 85vw;
+    }
   }
   &-content {
     width: 70vw;
@@ -17,12 +20,19 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    height: 50vh;
+   
     justify-content: space-between;
+     @media only screen and (max-width: $bp-medium) {
+       width: 80vw;
+    }
   }
 
   &-main {
     font-size: 2.3rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 2rem;
+    }
 
     a {
       text-decoration: underline;
@@ -43,19 +53,25 @@
     display: inline-block;
     letter-spacing: 0.2rem;
     outline: 2px solid #ff5277;
-    width: 15vw;
+    width: 20rem;
     border: none;
     font-family: $font-tertiary;
     font-size: 2rem;
-    height: 6vh;
+    height: 5rem;
     cursor: pointer;
-
     background: none;
     color: white;
     position: relative;
     overflow: hidden;
     transition: color 1s;
     padding: 1rem;
+
+     @media only screen and (max-width: $bp-largest) {
+      font-size: 1.8rem;
+    }
+     @media only screen and (max-width: $bp-large) {
+        
+    }
 
     &::before {
       content: "";
@@ -81,9 +97,16 @@
     border-width: 0 0 2px;
     border-color: #ff5277;
     background: none;
-    width: 50vw;
+    width: 55vw;
     padding-bottom: 1rem;
     color: white;
+
+     @media only screen and (max-width: $bp-largest) {
+    width: 60vw;
+  }
+   @media only screen and (max-width: $bp-medium) {
+       width: 70vw;
+    }
   }
 
   ::placeholder {
@@ -91,4 +114,8 @@
     font-size: 2rem;
     font-family: $font-tertiary;
   }
+}
+
+.bottom {
+  margin-top: 10rem;
 }

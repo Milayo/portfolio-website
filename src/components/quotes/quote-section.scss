@@ -2,9 +2,75 @@
 
 .quotes-container {
   background-color: #0e141b;
-  height: 100vh;
   text-transform: uppercase;
   font-family: $font-secondary;
-  font-size: 1.5rem;
+  border: 1px solid red;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 90vw;
+  margin: 0 auto;
+  height: 45rem;
+  @media only screen and (max-width: $bp-large) {
+    font-size: 2.5rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    font-size: 2.2rem;
+  }
+    @media only screen and (max-width: $bp-smallest) {
+   
+  }
+  
+
+}
+
+.quote-wrapper {
+  height: 50rem;
+  width: 45rem;
   position: relative;
+}
+
+.blob {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @media only screen and (max-width: $bp-large) {
+    height: 80%;
+    width: 80%;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    height: 90%;
+  width: 90%;
+  }
+  @media only screen and (max-width: $bp-smallest) {
+    height: 100%;
+  width: 100%;
+  }
+}
+
+.quotes-content {
+  width: 55%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 6rem;
+  position: absolute;
+  @media only screen and (max-width: $bp-large) {
+    width: 45%;
+  }
+  @media only screen and (max-width: $bp-small) {
+    width: 40%;
+    line-height: 4rem;
+  }
+  @media only screen and (max-width: $bp-smallest) {
+    width: 50%;
+    line-height: 3rem;
+  }
 }

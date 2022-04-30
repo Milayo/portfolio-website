@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: inherit;
-    
+      
 }
 
 html {
@@ -13,9 +13,14 @@ html {
     color: white;
     background-color: #0e141b;
     
+    
 }
 
 a {
   color: white;
   text-decoration: none;
+}
+
+body {
+overflow-x: hidden;
 }

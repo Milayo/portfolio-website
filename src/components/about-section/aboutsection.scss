@@ -4,12 +4,18 @@
   font-family: $font-tertiary;
   font-size: 2.2rem;
   line-height: 3rem;
+  @media only screen and (max-width: $bp-medium) {
+      font-size: 2rem;
+    }
 
   &-title {
     width: 75vw;
     font-size: 2.2rem;
     margin: 5rem auto;
     color: #ff5277;
+     @media only screen and (max-width: $bp-medium) {
+       width: 85vw;
+    }
   }
   &-item {
     width: 70vw;
@@ -25,9 +31,20 @@
   gap: 5rem;
   width: 70vw;
   margin: auto;
+   @media only screen and (max-width: $bp-medium) {
+       width: 85vw;
+    }
 
   i {
     font-size: 10rem;
     color: #ff5277;
+
+    @media only screen and (max-width: $bp-largest) {
+       font-size: 8rem;
+     }
+
+     @media only screen and (max-width: $bp-large) {
+       font-size: 6rem;
+     }
   }
 }

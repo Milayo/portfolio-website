@@ -7,7 +7,6 @@ const ContactSection = () => {
   const SERVICE_ID = "service_hafopfd";
   const TEMPLATE_ID = "template_ryb26uh";
   const PUBLIC_KEY = "hr8fD49jZkSeyFnc-";
-  const mailAddress = "mailto:moladeijarotimi@gmail.com";
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -32,12 +31,17 @@ const ContactSection = () => {
     e.target.reset();
   };
   return (
-    <div className="contactsection" id="contact">
+    <div
+      className="contactsection"
+      id="contact"
+      data-aos="zoom-in-down"
+      data-aos-duration="2000"
+    >
       <p className="contactsection-title">{"<contact>"}</p>
       <div className="contactsection-content">
         <p className="contactsection-main">
           You can get in touch by sending an email on{" "}
-          <a href="mailto:moladeijarotimi@gmail.com">
+          <a href="mailto:moladeijarotimi@gmail.com" target="_blank">
             moladeijarotimi@gmail.com
           </a>
           .
@@ -51,6 +55,7 @@ const ContactSection = () => {
             className="contactsection-input"
             placeholder="NAME"
             name="from_name"
+            required
           ></input>
           <input
             type="email"
@@ -72,7 +77,7 @@ const ContactSection = () => {
         </form>
       </div>
 
-      <p className="contactsection-title">{"</contact>"}</p>
+      <p className="contactsection-title bottom">{"</contact>"}</p>
     </div>
   );
 };

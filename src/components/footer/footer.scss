@@ -9,6 +9,14 @@
   width: 90vw;
   margin: 3rem auto;
 
+
+   @media only screen and (max-width: $bp-small) {
+   flex-direction: column-reverse;
+   justify-content: center;
+   align-items: center;
+   gap: 2.5rem;
+  }
+
   &-copyright {
     display: flex;
     gap: 0.3vw;
