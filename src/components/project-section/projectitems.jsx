@@ -14,7 +14,7 @@ const ProjectItems = [
     title: "Hand2Hand Crowdfunding Website",
     description:
       "Hand2Hand is a decentralized crowdfunding website where users can create or donate to financing campaigns. Built with REACT JS, REDUX, ROUTER, MORALIS, SASS, and MATERIAL UI.",
-    websiteLink: "",
+    websiteLink: "https://hand-in-hand-or427i6r6-veeglass.vercel.app/",
     videoDemo:
       "https://www.loom.com/share/8b8534c8e9f14d199fffc07cb7d178e3?sharedAppSource=personal_library",
     githubLink: "https://github.com/Milayo/hand-in-hand",
@@ -50,9 +50,9 @@ const ProjectItems = [
     id: 6,
     title: "Portfolio",
     description:
-      "A portfolio website. Built with REACT JS, SASS, EMAIL JS, REACT SCROLL, REACT-REVEAL AND SWEET ALERT.",
+      "A portfolio website. Built with REACT JS, SASS, FRAMER MOTION, EMAIL JS, REACT SCROLL, REACT-REVEAL AND SWEET ALERT.",
     websiteLink: "",
-    videoDemo: "",
+    videoDemo: "https://www.loom.com/share/ede98ceeee844ca5aef0573e7b8c9043",
     githubLink: "https://github.com/Milayo/portfolio-website",
   },
   {
