@@ -5,22 +5,36 @@
   font-size: 2.2rem;
   line-height: 3rem;
   @media only screen and (max-width: $bp-medium) {
-      font-size: 2rem;
-    }
+    font-size: 2rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    font-size: 1.6rem;
+  }
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 1.5rem;
+  }
 
   &-title {
     width: 75vw;
     font-size: 2.2rem;
     margin: 5rem auto;
     color: #ff5277;
-     @media only screen and (max-width: $bp-medium) {
-       width: 85vw;
+    @media only screen and (max-width: $bp-medium) {
+      width: 85vw;
+      margin: 3.5rem auto;
+    }
+    @media only screen and (max-width: $bp-small) {
+      font-size: 2rem;
+      margin: 2rem auto;
     }
   }
   &-item {
     width: 70vw;
     margin: 0 auto;
     margin-bottom: 2rem;
+    @media only screen and (max-width: $bp-medium) {
+      width: 85vw;
+    }
   }
 }
 
@@ -31,20 +45,28 @@
   gap: 5rem;
   width: 70vw;
   margin: auto;
-   @media only screen and (max-width: $bp-medium) {
-       width: 85vw;
-    }
+  @media only screen and (max-width: $bp-medium) {
+    width: 85vw;
+    gap: 4rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    gap: 3rem;
+  }
 
   i {
     font-size: 10rem;
     color: #ff5277;
 
     @media only screen and (max-width: $bp-largest) {
-       font-size: 8rem;
-     }
+      font-size: 8rem;
+    }
 
-     @media only screen and (max-width: $bp-large) {
-       font-size: 6rem;
-     }
+    @media only screen and (max-width: $bp-large) {
+      font-size: 6rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      font-size: 4rem;
+    }
   }
 }

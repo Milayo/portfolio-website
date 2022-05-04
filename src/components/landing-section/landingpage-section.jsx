@@ -1,35 +1,32 @@
 import React from "react";
 import "./landingpage-section.scss";
-import Fade from "react-reveal/Fade";
-import { Suspense } from "react";
-import { Environment, OrbitControls } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
+import { motion } from "framer-motion";
 import Avatar from "../../images/ReadyPlayerMe-Avatar.png";
 
 import HomeSection from "../home-section/homesection";
 
 const LandingSection = () => {
+   const fade = {
+     opacity: 1,
+     transition: {
+       delay: 1,
+       x: { type: "spring", stiffness: 100 },
+       duration: 1,
+     },
+   };
   return (
     <div>
       <section>
         {" "}
         <HomeSection />
-        <Fade right>
-          <div className="model">
-            {" "}
-            <img src={Avatar} alt="Tomi's Avatar" className="avatar" />
-          </div>
-        </Fade>
-        {/* <div className="model">
-        {" "}
-        <Canvas>
-          <Suspense fallback={null}>
-            <Model />
-            <OrbitControls />
-            <Environment preset="night" background={false} />
-          </Suspense>
-        </Canvas>
-      </div> */}
+        <motion.div
+          className="model"
+          whileInView={fade}
+          initial={{ opacity: "0" }}
+        >
+          {" "}
+          <img src={Avatar} alt="Tomi's Avatar" className="avatar" />
+        </motion.div>
       </section>
       <div className="scrollbar">
         <span className="mouse">

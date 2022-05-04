@@ -10,11 +10,12 @@
   align-items: center;
   position: sticky;
   top: 0;
-  border: 1px solid magenta;
-   @media only screen and (max-width: $bp-medium) {
-      width: 100vw;
-      padding: 2rem;
-    }
+  @media only screen and (max-width: $bp-medium) {
+    background-color: rgb(14, 20, 27, 0.8);
+    width: 100vw;
+    margin: 0;
+    padding: 2rem;
+  }
 
   &__title {
     font-family: $font-primary;
@@ -22,7 +23,12 @@
     @media only screen and (max-width: $bp-large) {
       font-size: 2.3rem;
     }
-   
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 2.1rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.9rem;
+    }
   }
 
   &__menu {
@@ -49,7 +55,8 @@
       transition: opacity 200ms;
     }
 
-    &-tab:hover {
+    &-tab:hover,
+    &-tab:active {
       transform: none;
     }
     &-tab:hover::before {
@@ -76,10 +83,173 @@
   }
 }
 
-.hamburger {
+.menu {
   display: none;
   @media only screen and (max-width: $bp-medium) {
-      display: block;
-      
+    display: block;
+    width: 45px;
+    overflow: hidden;
+    margin-right: 1rem;
+  }
+
+  &_checkbox {
+    display: none;
+  }
+
+  &_label {
+    position: relative;
+    display: block;
+    height: 29px;
+    cursor: pointer;
+    z-index: 2500;
+  }
+
+  &_label:before,
+  &_label:after,
+  &_text_bar {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+  }
+
+  &_label:before,
+  &_label:after {
+    content: "";
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55) left;
+  }
+
+  &_label:before {
+    top: 0;
+  }
+
+  &_label:after {
+    top: 12px;
+  }
+
+  &_text_bar {
+    top: 24px;
+  }
+
+  &_text_bar:before {
+    content: "MENU";
+    position: absolute;
+    top: 0.5rem;
+    right: 0;
+    left: 0;
+    font-size: 1.9rem;
+    color: #fff;
+    font-weight: bold;
+    font-family: $font-primary;
+    text-align: center;
+  }
+
+  &_checkbox:checked + &_label:before {
+    left: -45px;
+  }
+
+ 
+
+  &_checkbox:checked + &_label:after {
+    left: 45px;
+  }
+
+  &_checkbox:checked + &_label &_text_bar:before {
+    animation: moveUpThenDown 0.8s ease 0.2s forwards,
+      shakeWhileMovingUp 0.8s ease 0.2s forwards,
+      shakeWhileMovingDown 0.2s ease 0.8s forwards;
+  }
+
+  &_nav-items {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1500;
+    background: linear-gradient(
+      to left,
+      #0e141b 25%,
+      #36f372 0,
+      #36f372 50%,
+      #e9b171 0,
+      #e9b171 75%,
+      #ff5277 0%,
+      #ff5277 90%
+    );
+    transition: all 2s ease-in-out;
+    background-size: 100% 100%;
+    visibility: hidden;
+    width: 400%;
+
+    &-list {
+      position: absolute;
+      padding: 1rem 2rem;
+      top: 50%;
+      left: 50%;
+      transform: translate(-10%, -50%);
+      list-style: none;
+      text-align: center;
+      width: 100%;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-block;
+
+      li {
+        font-family: $font-primary;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+      }
     }
+  }
+
+  &_checkbox:checked ~ &_nav-items {
+    visibility: visible;
+    transform: translateX(-83%);
+  }
+
+  @keyframes moveUpThenDown {
+    0% {
+      top: 0;
+    }
+    50% {
+      top: -27px;
+    }
+    100% {
+      top: -23px;
+    }
+  }
+
+  @keyframes shakeWhileMovingUp {
+    0% {
+      transform: rotateZ(0);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    50% {
+      transform: rotateZ(0deg);
+    }
+    75% {
+      transform: rotateZ(10deg);
+    }
+    100% {
+      transform: rotateZ(0);
+    }
+  }
+
+  @keyframes shakeWhileMovingDown {
+    0% {
+      transform: rotateZ(0);
+    }
+    80% {
+      transform: rotateZ(3deg);
+    }
+    90% {
+      transform: rotateZ(-3deg);
+    }
+    100% {
+      transform: rotateZ(0);
+    }
+  }
 }

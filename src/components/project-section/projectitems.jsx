@@ -25,7 +25,7 @@ const ProjectItems = [
     description:
       "Travel BNB is a travel website where you can search for travel destinations, read their reviews, make bookings, and pay with credit card. Built with REACT JS, REDUX, REDUX-PERSIST, ROUTER, CONTEXT API, SASS, STRIPE, FIREBASE.",
     websiteLink: "",
-    videoDemo: "",
+    videoDemo: "https://www.loom.com/share/b6c9faa1649a4e8bad6aa285fdbf60e1",
     githubLink: "https://github.com/Milayo/travelbnb",
   },
   {

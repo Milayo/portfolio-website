@@ -5,10 +5,9 @@ section {
   display: flex;
   width: 85vw;
   margin: 3rem auto 0 auto;
-
   justify-content: center;
   z-index: 1;
-  border: 1px solid maroon;
+
   @media only screen and (max-width: $bp-large) {
     flex-direction: column;
     margin: 0 auto;
@@ -16,13 +15,17 @@ section {
   @media only screen and (max-width: $bp-medium) {
     width: 90vw;
   }
+
+  @media only screen and (max-width: $bp-smallest) {
+      width: 100vw;
+     
+  }
 }
 
 .model {
   width: 30vw;
   height: 44rem;
   margin: auto;
-  border: 1px solid navy;
   @media only screen and (max-width: $bp-largest) {
     height: 40rem;
   }
@@ -32,12 +35,19 @@ section {
     margin: 0 auto;
   }
   @media only screen and (max-width: $bp-medium) {
-    width: 65vw;
+    width: 75vw;
     height: 55rem;
   }
   @media only screen and (max-width: $bp-small) {
     width: 90vw;
     height: 50rem;
+  }
+   @media only screen and (max-width: 500px) {
+    height: 40rem;
+  }
+    @media only screen and (max-width: $bp-smallest) {
+    width: 100vw;
+    height: 35rem;
   }
 }
 
@@ -48,9 +58,16 @@ section {
 
 .scrollbar {
   position: absolute;
-  top: 85vh;
-  right: 4rem;
+  top: 55rem;
+  right: 8rem;
   z-index: 5;
+    @media only screen and (max-width: $bp-largest) {
+      top: 45rem;
+      right: 5rem;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+    right: 3rem;
+  }
 }
 
 .mouse {

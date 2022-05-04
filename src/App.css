@@ -12,6 +12,7 @@ html {
     font-size: 62.5%;
     color: white;
     background-color: #0e141b;
+    scroll-behavior: smooth;
     
     
 }

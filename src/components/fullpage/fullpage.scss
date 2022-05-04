@@ -1,13 +1,17 @@
 .fullpage {
   width: 100vw;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
-::-webkit-scrollbar{
-    width: 1.2rem;
+::-webkit-scrollbar {
+  width: 1.2rem;
 }
 
-::-webkit-scrollbar-thumb{
-  background: rgb(14,20,27);
-background: linear-gradient(180deg, rgba(14,20,27,1) 0%, rgba(255,82,119,1) 47%);
-   border-radius: 0.6rem;
+::-webkit-scrollbar-thumb {
+  background: rgb(14, 20, 27);
+  background: linear-gradient(
+    180deg,
+    rgba(14, 20, 27, 1) 0%,
+    rgba(255, 82, 119, 1) 47%
+  );
+  border-radius: 0.6rem;
 }

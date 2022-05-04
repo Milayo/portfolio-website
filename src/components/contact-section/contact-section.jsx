@@ -41,7 +41,11 @@ const ContactSection = () => {
       <div className="contactsection-content">
         <p className="contactsection-main">
           You can get in touch by sending an email on{" "}
-          <a href="mailto:moladeijarotimi@gmail.com" target="_blank">
+          <a
+            href="mailto:moladeijarotimi@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
             moladeijarotimi@gmail.com
           </a>
           .

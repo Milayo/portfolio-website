@@ -24,8 +24,6 @@ const Footer = () => {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
-            width="40"
-            height="40"
             className="footer-icon"
           >
             <path fill="none" d="M0 0h24v24H0z" />
@@ -41,8 +39,6 @@ const Footer = () => {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
-            width="40"
-            height="40"
             className="footer-icon github-icon"
           >
             <path fill="none" d="M0 0h24v24H0z" />
@@ -58,8 +54,6 @@ const Footer = () => {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
-            width="40"
-            height="40"
             className="footer-icon twitter-icon"
           >
             <path fill="none" d="M0 0h24v24H0z" />

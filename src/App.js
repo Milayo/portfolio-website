@@ -10,19 +10,21 @@ const App = () => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     setTimeout(() => setLoading(false), 4000);
-    AOS.init();
+    AOS.init({
+      duration: 1200,
+    });
     AOS.refresh();
   }, []);
   return (
     <div>
-      {/* {loading ? (
+      {loading ? (
         <Spinner />
-      ) : ( */}
+      ) : (
         <div>
           <Header />
           <FullPage />
         </div>
-      {/* )} */}
+      )}
     </div>
   );
 };

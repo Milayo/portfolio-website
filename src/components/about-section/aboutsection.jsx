@@ -6,9 +6,11 @@ const AboutSection = () => {
     <div className="aboutsection" id="about">
       <div
         className="aboutsection_content1"
-        data-aos="zoom-out"
-        data-aos-duration="2000"
-        data-aos-offset="300"
+        data-aos="zoom-out-up"
+        data-aos-easing="ease-out"
+        data-aos-duration="1500"
+        data-aos-mirror="true"
+        data-aos-once="false"
       >
         <p className="aboutsection-title">{"<about>"}</p>
         <p className="aboutsection-item">
@@ -28,10 +30,14 @@ const AboutSection = () => {
         </p>
         <p className="aboutsection-title">{"</about>"}</p>
       </div>
+
       <div
         className="aboutsection_content2"
-        data-aos="fade-down"
-        data-aos-duration="2000"
+        data-aos="zoom-out-up"
+        data-aos-easing="ease-out"
+        data-aos-duration="1500"
+        data-aos-mirror="true"
+        data-aos-once="false"
       >
         <p className="aboutsection-title">{"<skillset>"}</p>
         <div className="skillset">

@@ -9,17 +9,24 @@
   width: 90vw;
   margin: 3rem auto;
 
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    gap: 2.3rem;
+  }
 
-   @media only screen and (max-width: $bp-small) {
-   flex-direction: column-reverse;
-   justify-content: center;
-   align-items: center;
-   gap: 2.5rem;
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 1.6rem;
+    gap: 1rem;
+    width: 100vw;
+    margin: 0 0 1rem 0;
   }
 
   &-copyright {
     display: flex;
-    gap: 0.3vw;
+    gap: 1rem;
     align-items: center;
   }
 
@@ -32,10 +39,15 @@
   &-icon {
     display: inline-block;
     animation: float 5s ease-in-out infinite;
-    
+    height: 4rem;
+    width: 4rem;
+    @media only screen and (max-width: $bp-small) {
+      height: 3rem;
+      width: 3rem;
+    }
 
     &:hover {
-       color: #ff5277;
+      color: #ff5277;
     }
   }
 }
