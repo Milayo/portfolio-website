@@ -35,7 +35,7 @@ const Header = () => {
           Contact
         </Link>
         <a
-          href="https://docs.google.com/document/d/1jm84AAhzN0xR3CudbnIPdN2cFJUDPD-giMEvZCpcFJw/edit?usp=sharing"
+          href="https://www.canva.com/design/DAFD76o-cPA/hzB2UudpaO3wFWUkxo4P_g/view?website#4"
           target="_blank"
           rel="noreferrer"
           className="header__title header__menu-tab"
@@ -90,7 +90,7 @@ const Header = () => {
             </li>
             <li>
               <a
-                href="https://docs.google.com/document/d/1jm84AAhzN0xR3CudbnIPdN2cFJUDPD-giMEvZCpcFJw/edit?usp=sharing"
+                href="https://www.canva.com/design/DAFD76o-cPA/hzB2UudpaO3wFWUkxo4P_g/view?website#4"
                 target="_blank"
                 rel="noreferrer"
                 className="header__menu-tab"
