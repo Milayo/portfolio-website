@@ -9,7 +9,7 @@ const LandingSection = () => {
    const fade = {
      opacity: 1,
      transition: {
-       delay: 1,
+       delay: 0,
        x: { type: "spring", stiffness: 100 },
        duration: 1,
      },
