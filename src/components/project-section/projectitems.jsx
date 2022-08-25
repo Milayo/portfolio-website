@@ -2,7 +2,8 @@ const ProjectItems = [
   {
     id: 1,
     title: "PodCast App",
-    description: "A website for a podcast brand. Converted a figma design into a functional and interactive React application for a client.",
+    description:
+      "A website for a podcast brand. Converted a figma design into a functional and interactive React application for a client.",
     websiteLink: "https://my-podcast-one.vercel.app/",
     videoDemo: "",
     githubLink: "https://github.com/Milayo/myPodcast",
@@ -12,7 +13,7 @@ const ProjectItems = [
     title: "UNICOMP School Portal",
     description:
       "A university school portal with features like Fees Payment via Card and Crypto, Course Registration, Profile Editing and Course Scheduling. Built with REACT JS, ROUTER, FIREBASE, MORALIS, PAYSTACK, STYLED COMPONENTS, CHAKRA UI and FORMIK.",
-    websiteLink: "",
+    websiteLink: "https://unicomp.vercel.app/",
     videoDemo:
       "https://www.loom.com/share/cc720f70207a4ac698fc1ecd0d6c6773?sharedAppSource=personal_library",
     githubLink: "https://github.com/Milayo/unicomp",
@@ -60,7 +61,7 @@ const ProjectItems = [
     title: "Portfolio",
     description:
       "A portfolio website. Built with REACT JS, SASS, FRAMER MOTION, EMAIL JS, REACT SCROLL, REACT-REVEAL AND SWEET ALERT.",
-    websiteLink: "",
+    websiteLink: "https://tomilayo-portfolio-milayo.vercel.app",
     videoDemo: "https://www.loom.com/share/ede98ceeee844ca5aef0573e7b8c9043",
     githubLink: "https://github.com/Milayo/portfolio-website",
   },
