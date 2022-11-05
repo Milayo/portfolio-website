@@ -20,6 +20,15 @@ const ProjectItems = [
   },
   {
     id: 3,
+    title: "Seer NFT App",
+    description:
+      "An NFT application to view your NFT collections from LearnWeb3DAO and Buildspace. Built with Next JS, Typescript, wagmi and Alchemy API",
+    websiteLink: "https://seernft-app.vercel.app/",
+    videoDemo: "",
+    githubLink: "https://github.com/Milayo/Web3-NFT-project",
+  },
+  {
+    id: 4,
     title: "Hand2Hand Crowdfunding Website",
     description:
       "Hand2Hand is a decentralized crowdfunding website where users can create or donate to financing campaigns. Built with REACT JS, REDUX, ROUTER, MORALIS, SASS, and MATERIAL UI.",
@@ -29,7 +38,7 @@ const ProjectItems = [
     githubLink: "https://github.com/Milayo/hand-in-hand",
   },
   {
-    id: 4,
+    id: 5,
     title: "Travel BNB",
     description:
       "Travel BNB is a travel website where you can search for travel destinations, read their reviews, make bookings, and pay with credit card. Built with REACT JS, REDUX, REDUX-PERSIST, ROUTER, CONTEXT API, SASS, STRIPE, FIREBASE.",
@@ -38,7 +47,7 @@ const ProjectItems = [
     githubLink: "https://github.com/Milayo/travelbnb",
   },
   {
-    id: 5,
+    id: 6,
     title: "Tellium",
     description:
       "A communication platform that allows users to keep in touch with their family, friends and loved ones. Built with REACT JS, ROUTER, MATERIAL UI, REACT BOOTSTRAP, REACT ANIMATED CSS, SASS, REDUX, REDUX PERSIST, FORMIK, and FIREBASE.",
@@ -48,7 +57,7 @@ const ProjectItems = [
   },
 
   {
-    id: 6,
+    id: 7,
     title: "FilmTUBE",
     description:
       "A Youtube clone website. Built with REACT JS, ROUTER, MDBOOTSTRAP, REACT YOUTUBE, SASS, REDUX, REACT PLAYER, AXIOS, and FIREBASE.",
@@ -57,7 +66,7 @@ const ProjectItems = [
     githubLink: "https://github.com/Milayo/youtube-clone-app",
   },
   {
-    id: 7,
+    id: 8,
     title: "Portfolio",
     description:
       "A portfolio website. Built with REACT JS, SASS, FRAMER MOTION, EMAIL JS, REACT SCROLL, REACT-REVEAL AND SWEET ALERT.",
@@ -66,7 +75,7 @@ const ProjectItems = [
     githubLink: "https://github.com/Milayo/portfolio-website",
   },
   {
-    id: 8,
+    id: 9,
     title: "Daily Agenda Application",
     description:
       "A daily agenda application. Built with REACT JS, ROUTER, FIREBASE, REDUX, FIREBASE and MDBREACT.",

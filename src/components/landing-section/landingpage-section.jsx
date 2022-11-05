@@ -10,7 +10,7 @@ const LandingSection = () => {
      opacity: 1,
      transition: {
        delay: 0,
-       x: { type: "spring", stiffness: 100 },
+       x: { type: "spring", stiffness: 60 },
        duration: 1,
      },
    };
@@ -22,7 +22,7 @@ const LandingSection = () => {
         <motion.div
           className="model"
           whileInView={fade}
-          initial={{ opacity: "0" }}
+          initial={{ opacity: "0.2" }}
         >
           {" "}
           <img src={Avatar} alt="Tomi's Avatar" className="avatar" />
